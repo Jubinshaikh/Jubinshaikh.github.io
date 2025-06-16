@@ -32,3 +32,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillBars = document.querySelectorAll(".skill-progress");
+  skillBars.forEach((bar) => {
+    const value = bar.getAttribute("data-skill-value");
+    bar.style.width = value + "%";
+  });
+});
+
