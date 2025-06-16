@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WAPH - Phu Phung Student</title>
+</head>
+<body>
+  <div id="top">
+    <h1>Web Application Programming and Hacking</h1>
+    <h2>Front-end Web Development Lab</h2>
+    <h3>Instructor: Dr. Phu Phung</h3>
+  </div>
+
+  <div id="menubar">
+    <h3>Student: Jubin Shaikh</h3>
+    <img src="assets/img/profile.png" alt="My headshot" width="50">  
+  </div>
+
+  <div id="main">
+    <p>A simple HTML Page</p>
+    Using the 
+    <a href="https://www.w3schools.com/html" target="_blank">W3Schools template</a>
+    <h3>Web Application Programming and Hacking Course Information</h3>
+    
+    <p>This course introduced me to both the fundamentals of web development and the real-world security challenges that come with building modern web applications. I explored key front-end technologies like HTML5, CSS, and JavaScript, along with back-end components such as PHP and MySQL. Beyond development, the course emphasized web vulnerabilities and taught me how to identify and defend against attacks through hands-on labs and hackathons. We also covered essential principles of secure coding, which helped me understand how to write more resilient and secure applications</p>
+
+    <h3>Overview of Lab 0</h3>
+    <p>Lab 0 was all about setting up a strong technical foundation. In Part 1, I installed and configured an Ubuntu virtual machine, setting up critical tools like net-tools, Git, Sublime Text, Apache2, Wireshark, Pandoc, and even Google Chrome. It was my first step into the WAPH lab environment, and it gave me the confidence to work in a Linux-based web dev setup</p>
+
+    <p>In Part 2, I cloned the course’s GitHub repository and generated my own SSH key pair. This allowed me to securely connect to GitHub without needing to enter credentials repeatedly a small but powerful productivity boost I also cloned my private repository and ensured Git actions like pull, push, and commit worked seamlessly from the terminal.</p>
+
+     <h3>Overview of Lab 1</h3>
+     <p>In this lab,i got hand on experience with how th web actually wworks under the hood. first i used wireshark to capture and analyze real http traffic. it was interseting to see how a smple browser reques turns into derailed packets. i also used telent to manually type out an http get request,which helped me understand how web servers respond to raw requests it made the protocol feel more real and less like just theory</p>
+
+     <p>the second part of the lab focusedon building simple web apps. i wrote my first cgi program in c and ran it through the apache server. ten i modified it to to output a full html page using c code. afte that i created a basic php application that back user input using both get and post methods. i learned how to deploy these scripts properly, change permissions, and test them through a browser and terminal</p>
+     <h3>Overview of Lab 2</h3>
+     <p>I started by creating a basic HTML page with my name, headshot, and a simple form. Then I added some JavaScript to make the page interactive for example, showing the current date/time when clicking a button, hiding/showing my email, and displaying both digital and analog clocks</p>
+     <p>In the next part, I worked with AJAX and jQuery to send and receive data from a PHP backend without refreshing the page. I also experimented with different types of CSS—inline, internal, and external to improve the style and layout of the page.</p>
+     <p>One of the most fun parts was using public APIs. I connected the page to the JokeAPI to show a random programming joke when the page loads, and used the Agify API to predict someone’s age based on their name. These made the page feel more real and dynamic</p>
+
+     
+     <h3>Overview of Hackathon 1</h3>
+     
+     <p>In this hackathon, I learned how Cross-Site Scripting (XSS) attacks work and how to defend against them. In Task 1, I successfully completed all 7 levels of reflected XSS attacks by crafting payloads that bypassed server filters. I also guessed the possible vulnerable code behind each level</p>
+
+     <p>In Task 2, I secured my own code from Lab 1 and Lab 2:In echo.php, I added input validation using isset() and trim(), and used htmlentities() to prevent XSS.In waph-shaikhjn.html, I validated all inputs using JavaScript and HTML5, and safely displayed responses using .text() instead of .html().This hackathon taught me how to write safer web applications by validating input and encoding output</p>
+
+     <h3>Overview of Individual Project</h3>
+
+     <p>In this project, I built and deployed a professional portfolio website using GitHub Pages. The site highlights my background, skills, and projects using a customized Bootstrap template. I integrated interactive JavaScript features including a digital and analog clock, dark mode toggle, and show/hide email using jQuery. I also added live APIs for jokes and random dog images, along with visit tracking using cookies and FlagCounter</p>
+
+    <p>This website not only demonstrates my front-end development and scripting skills, but also serves as a live portfolio I can share when applying to jobs and reaching out to potential employers in my target companies.</p>
+    <hr>
+  </div>
+</body>
+</html>
