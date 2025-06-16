@@ -41,3 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+$(document).ready(function () {
+    $("#toggle-theme").click(function () {
+        $("body").toggleClass("dark-mode");
+    });
+});
+
