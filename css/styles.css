@@ -10970,3 +10970,32 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+#skills-meter {
+  width: 100%;
+}
+
+.skill-item {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background-color: #bd5d38; /* theme color */
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
