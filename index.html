@@ -280,7 +280,6 @@ If you're looking for a motivated developer who is always eager to learn, adapt,
                
                <h4 class="mt-5">Dark Mode</h4>
                <button id="toggle-theme" class="btn btn-sm btn-outline-primary">Toggle Dark Mode</button>
- 
               </div>
           </section>
         <!-- Bootstrap core JS-->
@@ -293,37 +292,62 @@ If you're looking for a motivated developer who is always eager to learn, adapt,
         this.innerText = "shaikhjn@mail.uc.edu";
     });
 
-function formatDateTime(date) {
-    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}, ${date.toLocaleTimeString()}`;
-}
-
-function showWelcomeMessage() {
-    const lastVisit = getCookie("lastVisit");
-    const now = new Date();
-    const nowString = now.toUTCString();
-
-    const messageElement = document.getElementById("visit-msg");
-
-    if (!lastVisit) {
-        messageElement.innerText = "Welcome to my homepage for the first time!";
-    } else {
-        const lastVisitDate = new Date(lastVisit);
-        messageElement.innerText = `Welcome back! Your last visit was ${formatDateTime(lastVisitDate)}`;
+</script>
+<script>
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + expires.toUTCString() + ";path=/";
     }
 
-    document.cookie = "lastVisit=" + nowString + "; path=/";
-}
+    function getCookie(name) {
+        const cookieName = name + "=";
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            if (cookie.indexOf(cookieName) === 0) {
+                return decodeURIComponent(cookie.substring(cookieName.length));
+            }
+        }
+        return null;
+    }
 
-function getCookie(name) {
-    const value = "; " + document.cookie;
-    const parts = value.split("; " + name + "=");
-    if (parts.length === 2) return parts.pop().split(";").shift();
-}
+    function displayWelcomeMessage() {
+        const lastVisitDate = getCookie("lastVisitDate");
+        const currentDate = new Date().toLocaleString();
 
-// Call when DOM is fully loaded
-document.addEventListener("DOMContentLoaded", showWelcomeMessage);
+        if (!lastVisitDate) {
+            alert("Welcome to my homepage!");
+        } else {
+            alert("Welcome back! Your last visit was " + lastVisitDate);
+        }
+
+        setCookie("lastVisitDate", currentDate, 365); // Always update after
+    }
+
+    function animateSkillMeters() {
+        const skillItems = document.querySelectorAll('.skill-progress');
+
+        skillItems.forEach(skill => {
+            const skillPosition = skill.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (skillPosition < screenPosition) {
+                const skillValue = skill.getAttribute('data-skill-value');
+                skill.style.width = skillValue + '%';
+            }
+        });
+    }
+
+    // Run on page load
+    window.onload = () => {
+        displayWelcomeMessage();
+        animateSkillMeters(); // optional initial run
+    };
+
+    // Animate on scroll
+    window.addEventListener('scroll', animateSkillMeters);
 </script>
-
 <script>
   window.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".skill-progress").forEach((bar) => {
@@ -335,7 +359,8 @@ document.addEventListener("DOMContentLoaded", showWelcomeMessage);
 <script>
     function displayTime() {
             document.getElementById('digital-clock').innerHTML = "Current time:" + new Date();
-        } setInterval(displayTime, 500); </script>
+        } setInterval(displayTime, 500); 
+    </script>
 <script>
         function getJoke() {
             $.get("https://v2.jokeapi.dev/joke/Any?type=single", function (result) {
