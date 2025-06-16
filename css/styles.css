@@ -10999,3 +10999,15 @@ section.resume-section .resume-section-content {
   transition: width 1s ease-in-out;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h4 {
+    color: #ffa726;
+}
+
