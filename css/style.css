@@ -444,6 +444,96 @@ img { max-width: 100%; display: block; }
 .link.muted { color: var(--muted); }
 .link.muted:hover { color: var(--ink); border-color: var(--ink-2); }
 
+/* ---- Highlighted (secondary tier under Featured) ---- */
+.work.highlighted {
+  background: var(--cream);
+  border-left: 3px solid var(--accent);
+  padding-left: 28px !important;
+}
+.work.highlighted .work-title { color: var(--ink); }
+
+/* ---- Key outcomes strip ---- */
+.key-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 14px 0 18px;
+  margin: 0 0 14px;
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.ko-label {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-weight: 500;
+}
+.ko-item {
+  color: var(--ink-2);
+  padding: 3px 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11.5px;
+}
+
+/* ---- Badges (live / source / case study / todo) ---- */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+.badge-live {
+  background: rgba(93, 126, 90, 0.12);
+  color: var(--green);
+  border-color: rgba(93, 126, 90, 0.35);
+}
+.badge-live:hover {
+  background: var(--green);
+  color: var(--paper);
+}
+.badge-source {
+  background: var(--cream-2);
+  color: var(--ink-2);
+  border-color: var(--line);
+}
+.badge-source:hover {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+.badge-case {
+  background: rgba(201, 100, 66, 0.10);
+  color: var(--accent-deep);
+  border-color: var(--accent-soft);
+  cursor: default;
+  opacity: 0.85;
+}
+.badge-todo {
+  background: rgba(180, 140, 60, 0.10);
+  color: #8a6a25;
+  border-color: rgba(180, 140, 60, 0.35);
+  cursor: help;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
