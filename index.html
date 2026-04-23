@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jubin Shaikh  Computer Science · Generative AI</title>
-<meta name="description" content="Jubin Shaikh — CS @ University of Cincinnati. Building intelligent systems with Generative AI, LLM applications, and full-stack engineering." />
+<title>Jubin Shaikh — Full-Stack &amp; AI Engineer</title>
+<meta name="description" content="Jubin Shaikh — CS @ University of Cincinnati. I build production full-stack apps and LLM-powered tools. Open to Summer 2026 Co-op in software and applied AI." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -42,17 +42,18 @@
       </div>
       <p class="eyebrow"><span class="dot"></span> Available for Summer 2026 Co-op</p>
       <h1 class="display">
-        Building thoughtful<br/>
-        software at the edge of<br/>
-        <em>generative intelligence.</em>
+        I build full-stack<br/>
+        products and <em>LLM-powered</em><br/>
+        tools that ship.
       </h1>
       <p class="lede">
-        I'm Jubin a Computer Science student at the University of Cincinnati,
-        crafting full-stack applications, LLM-powered tools, and data-driven
-        experiences that feel honest and human.
+        I'm Jubin — Computer Science at the University of Cincinnati (GPA 3.53, Dean's List).
+        I've shipped 10+ live projects across React, Node, PostgreSQL, and LLM APIs, and I'm
+        looking for a <strong>Summer 2026 SWE / AI Engineering Co-op</strong> where I can do the
+        same on a real team.
       </p>
       <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">View selected work</a>
+        <a href="#work" class="btn btn-primary">See what I've shipped</a>
         <a href="mailto:shaikhjn@mail.uc.edu" class="btn btn-ghost">shaikhjn@mail.uc.edu</a>
       </div>
       <div class="hero-meta">
@@ -72,22 +73,27 @@
       </div>
       <div class="col-main">
         <h2 class="heading reveal">
-          A computer scientist drawn to the
-          quiet craft of <em>well-built systems.</em>
+          An engineer who <em>ships,</em>
+          not just commits.
         </h2>
         <div class="prose">
           <p>
-            I work across the stack from React dashboards with NLP pipelines
-            to PostgreSQL schemas in BCNF, from packet-level network labs to
-            LLM-powered chatbots. What I care about most is <strong>clarity</strong>:
-            software that does what it claims, in a way that makes sense.
+            I treat every project like it has users. That means scoping the problem
+            first, choosing the right primitives, writing code that's <strong>secure
+            by default</strong>, and getting it deployed on a URL someone can
+            actually visit — not left in a branch.
           </p>
           <p>
-            My current focus is <strong>generative AI</strong> and the products
-            that emerge from it interfaces that turn raw model capability into
-            something a person can actually use. I'm looking for a Summer 2026
-            Co-op where I can ship that kind of work alongside people who care
-            about the details.
+            My core focus is the seam between <strong>full-stack engineering and applied
+            AI</strong>: building products on top of LLMs that go beyond a chat box.
+            I care about latency, prompt design, schema integrity, error states, and
+            the small interactions that decide whether software feels finished.
+            Coursework in Information Security, Database Design, and Cloud Computing
+            keeps that work grounded.
+          </p>
+          <p>
+            Open to a <strong>Summer 2026 Co-op</strong> in software engineering, applied AI,
+            or product engineering — somewhere a co-op ships features, not Jira tickets.
           </p>
         </div>
       </div>
@@ -99,8 +105,8 @@
     <div class="container">
       <div class="section-head">
         <p class="label">02 — Selected Work</p>
-        <h2 class="heading reveal">Projects, deployed and shipped.</h2>
-        <p class="sub">A mix of full-stack apps, AI tools, and systems work most are live and explorable.</p>
+        <h2 class="heading reveal">Built, deployed, and live.</h2>
+        <p class="sub">10+ projects shipped across full-stack web, applied AI, databases, and networking. Most are linked below — click through and break them.</p>
       </div>
 
       <!-- Featured -->
@@ -109,11 +115,11 @@
           <span class="pill">Featured · Apr 2025</span>
           <span class="stack-line">React · Plotly.js · Python ETL · NLP · Vercel</span>
         </div>
-        <h3 class="work-title">Feature Traceability Webex Release Insights</h3>
+        <h3 class="work-title">Feature Traceability — Webex Release Insights</h3>
         <p class="work-desc">
-          An interactive dashboard analyzing 24 software releases and 258 features with
-          NLP-driven review sentiment. Built end-to-end: Python ETL pipelines,
-          React + Plotly front-end, deployed via GitHub Actions CI/CD to Vercel.
+          <strong>Problem:</strong> Cisco Webex ships dozens of features per release; tracing customer sentiment back to specific features was a manual, multi-day exercise.<br/>
+          <strong>Build:</strong> End-to-end pipeline — Python ETL ingesting 24 releases / 258 features, NLP sentiment classification on user reviews, and a React + Plotly.js dashboard for slicing by release, feature, and sentiment. Deployed via GitHub Actions CI/CD to Vercel.<br/>
+          <strong>Outcome:</strong> Collapsed days of manual review into a single interactive view — live and explorable.
         </p>
         <div class="work-links">
           <a class="link" href="https://lsse-trainmetaphor.vercel.app/" target="_blank">Live demo ↗</a>
@@ -130,7 +136,7 @@
             <span class="stack-line">JavaScript · LLM API · DOM</span>
           </div>
           <h3 class="work-title">L'Oréal Beauty Advisor</h3>
-          <p class="work-desc">A smart chatbot for products, routines, skincare, haircare, makeup, and fragrance guidance powered by LLM API integration with conversation memory.</p>
+          <p class="work-desc"><strong>Problem:</strong> A generic LLM chatbot drifts off-topic and hallucinates products. <strong>Build:</strong> Vanilla-JS front-end wired to an LLM API with system-prompt scoping, conversation memory, and refusal logic to keep the bot inside skincare/haircare/makeup/fragrance. <strong>Outcome:</strong> A deployed beauty advisor that stays on-domain and handles real product queries.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/08-prj-loreal-chatbot/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/08-prj-loreal-chatbot" target="_blank">Source</a>
@@ -142,8 +148,8 @@
             <span class="pill pill-ai">Generative AI</span>
             <span class="stack-line">JavaScript · LLM API · UX</span>
           </div>
-          <h3 class="work-title">L'Oréal Smart Routine Builder</h3>
-          <p class="work-desc">A product advisor that builds personalized beauty routines with category filters, search, and AI-generated recommendations grounded in a product catalog.</p>
+          <h3 class="work-title">L'Oréal Routine Builder</h3>
+          <p class="work-desc"><strong>Problem:</strong> Customers struggle to combine products into a coherent routine. <strong>Build:</strong> Catalog browser with category filters and search, paired with an LLM that generates step-by-step routines grounded in user-selected products — not hallucinated SKUs. <strong>Outcome:</strong> Turns a static product catalog into a personalized routine in seconds.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/09-prj-loreal-routine-builder/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/09-prj-loreal-routine-builder" target="_blank">Source</a>
@@ -156,7 +162,7 @@
             <span class="stack-line">JavaScript · NASA APOD API</span>
           </div>
           <h3 class="work-title">NASA Space Explorer</h3>
-          <p class="work-desc">Browse daily NASA imagery and videos by date range. Pulls from the Astronomy Picture of the Day API with graceful loading and error states.</p>
+          <p class="work-desc"><strong>Problem:</strong> NASA's APOD endpoint is rich but not browsable. <strong>Build:</strong> A date-range explorer hitting the APOD API with debounced fetches, mixed image/video handling, and graceful empty + error states. <strong>Outcome:</strong> A live front-end that turns a single endpoint into something a non-developer can actually use.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/07-nasa-space-explorer/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/07-nasa-space-explorer" target="_blank">Source</a>
@@ -169,7 +175,7 @@
             <span class="stack-line">React · TypeScript · Node · PostgreSQL</span>
           </div>
           <h3 class="work-title">Online Shopping Application</h3>
-          <p class="work-desc">An 11-table PostgreSQL schema in 3NF/BCNF with 5,000+ rows, 30+ advanced SQL queries, ACID-compliant PL/pgSQL transactions, and a full RESTful Node/Express backend.</p>
+          <p class="work-desc"><strong>Problem:</strong> Build an e-commerce backend that holds up under realistic workloads, not a toy demo. <strong>Build:</strong> 11-table PostgreSQL schema normalized to 3NF/BCNF, 5,000+ seeded rows, 30+ analytical SQL queries, and ACID-compliant PL/pgSQL transactions for inventory and checkout. Node/Express REST API consumed by a React + TypeScript front-end. <strong>Outcome:</strong> A reference-quality full-stack app demonstrating database engineering rigor end-to-end.</p>
           <div class="work-links">
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
@@ -181,7 +187,7 @@
             <span class="stack-line">JavaScript · LocalStorage · DnD</span>
           </div>
           <h3 class="work-title">Kanban Task Board</h3>
-          <p class="work-desc">A Trello-style task board with drag-and-drop, persistent storage, and a clean, opinionated UI. Deployed to Vercel.</p>
+          <p class="work-desc"><strong>Problem:</strong> A lightweight task board with no auth overhead and zero server cost. <strong>Build:</strong> HTML5 drag-and-drop columns, persistent state in <code>localStorage</code>, single-page UI deployed to Vercel. <strong>Outcome:</strong> A zero-backend Trello alternative that loads instantly and survives refreshes.</p>
           <div class="work-links">
             <a class="link" href="https://kanban-task-board-lime.vercel.app" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/kanban-task-board" target="_blank">Source</a>
@@ -194,7 +200,7 @@
             <span class="stack-line">JavaScript · Game Logic</span>
           </div>
           <h3 class="work-title">Hydration Heroes</h3>
-          <p class="work-desc">An interactive game raising awareness for clean-water access. Three difficulty modes, lives, scoring, and direct charity:water donation links.</p>
+          <p class="work-desc"><strong>Problem:</strong> charity:water needed an engaging way to surface the global clean-water crisis. <strong>Build:</strong> Browser game with three difficulty modes, score/lives state machine, and deep-links into the charity:water donation flow. <strong>Outcome:</strong> A shippable awareness tool — playable in any browser, no install required.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/05-charity-water-game-prototype/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/05-charity-water-game-prototype" target="_blank">Source</a>
@@ -207,7 +213,7 @@
             <span class="stack-line">HTML · CSS · JavaScript</span>
           </div>
           <h3 class="work-title">Intel: Sustainability Through the Ages</h3>
-          <p class="work-desc">An interactive timeline documenting Intel's sustainability journey from 1968 to 2024 — milestones, renewable-energy data, and net-zero commitments.</p>
+          <p class="work-desc"><strong>Problem:</strong> Intel's 50+ years of sustainability milestones don't land as a static report. <strong>Build:</strong> Interactive timeline (1968 → 2024) with progressive disclosure, milestone cards, and inline renewable-energy data points. <strong>Outcome:</strong> A scrollable narrative that turns a corporate report into a five-minute experience.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/03-prj-intel-sustainability/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/03-prj-intel-sustainability" target="_blank">Source</a>
@@ -220,7 +226,7 @@
             <span class="stack-line">JavaScript · DOM · State</span>
           </div>
           <h3 class="work-title">Sustainability Summit Check-In</h3>
-          <p class="work-desc">A real-time event check-in system with attendance counter and team selection — built for an Intel sustainability summit prototype.</p>
+          <p class="work-desc"><strong>Problem:</strong> Event organizers needed a real-time check-in tool without standing up a backend. <strong>Build:</strong> Vanilla JS state machine handling team selection, capacity caps, and live attendance counts in the DOM. <strong>Outcome:</strong> A drop-in browser tool that ran the prototype check-in flow for an Intel sustainability summit demo.</p>
           <div class="work-links">
             <a class="link" href="https://jubinshaikh.github.io/05-prj-intel-event-check-in/" target="_blank">Live demo ↗</a>
             <a class="link muted" href="https://github.com/Jubinshaikh/05-prj-intel-event-check-in" target="_blank">Source</a>
@@ -233,7 +239,7 @@
             <span class="stack-line">Cisco Packet Tracer · Wireshark</span>
           </div>
           <h3 class="work-title">Network Simulation &amp; Packet Analysis</h3>
-          <p class="work-desc">Multi-lab simulations covering OSPF, VLAN, and NAT configurations. Captured traffic with Wireshark, reduced HTTP latency by 32%, and documented VoIP optimizations.</p>
+          <p class="work-desc"><strong>Problem:</strong> Verify OSPF, VLAN, and NAT configurations behave the way the spec claims under real traffic. <strong>Build:</strong> Multi-lab Cisco Packet Tracer topologies plus Wireshark captures across HTTP, VoIP, and routing flows. <strong>Outcome:</strong> Documented a <strong>32% HTTP latency reduction</strong> after route tuning and isolated VoIP jitter sources via packet-level analysis.</p>
           <div class="work-links">
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
@@ -245,7 +251,7 @@
             <span class="stack-line">MATLAB · GUI</span>
           </div>
           <h3 class="work-title">Interactive Flowchart Learning Tool</h3>
-          <p class="work-desc">A MATLAB GUI app teaching flowcharting logic to middle-school students with instruction, testing, and automated visual feedback.</p>
+          <p class="work-desc"><strong>Problem:</strong> Middle-schoolers struggle to learn flowchart logic from static worksheets. <strong>Build:</strong> MATLAB GUI app with instruction, testing, and automated visual feedback — students draw flowcharts and the tool grades them. <strong>Outcome:</strong> A self-contained classroom tool used to teach algorithmic thinking before students touch code.</p>
           <div class="work-links">
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
@@ -262,7 +268,8 @@
         <p class="label">03 — Toolkit</p>
       </div>
       <div class="col-main">
-        <h2 class="heading reveal">The tools I reach for.</h2>
+        <h2 class="heading reveal">The stack I ship with.</h2>
+        <p class="sub" style="margin-bottom:32px;">Production work pulls from across this list. The bold pieces are where I'm fastest and most opinionated.</p>
         <div class="skills">
           <div class="skill-row">
             <h4>AI / ML</h4>
@@ -300,16 +307,17 @@
         <p class="label">04 — Experience</p>
       </div>
       <div class="col-main">
-        <h2 class="heading reveal">Where I've worked.</h2>
+        <h2 class="heading reveal">Where I've built things.</h2>
+        <p class="sub" style="margin-bottom:36px;">Two industry stints plus an ops-heavy events role. Each taught a different muscle: shipping under deadlines, debugging legacy code, and operating in real time.</p>
         <div class="experience">
           <div class="exp-item">
             <div class="exp-when">May 2025 — Aug 2025</div>
             <h3>Software Developer <span class="company">· Infosense Global</span></h3>
             <p class="loc">Gandhinagar, India</p>
             <ul>
-              <li>Contributed to full-stack web app development across design, implementation, and testing in agile sprints.</li>
-              <li>Built responsive front-end features with HTML/CSS/JS/Bootstrap; integrated RESTful APIs to extend functionality.</li>
-              <li>Applied secure coding, version control, and code review workflows to improve codebase quality.</li>
+              <li>Shipped full-stack web features end-to-end — design, implementation, and testing across two-week agile sprints.</li>
+              <li>Built responsive front-end components in HTML/CSS/JS/Bootstrap and integrated RESTful APIs that extended core product flows.</li>
+              <li>Practiced security-conscious coding (input validation, dependency hygiene), Git-based PR review, and a code-review-first culture to keep the codebase shippable.</li>
             </ul>
           </div>
           <div class="exp-item">
@@ -317,8 +325,8 @@
             <h3>Web Development Intern <span class="company">· Infosense Global</span></h3>
             <p class="loc">Gandhinagar, India</p>
             <ul>
-              <li>Designed, developed, and maintained responsive websites and web apps with cross-functional teams.</li>
-              <li>Debugged and optimized cross-platform code to enhance UX and performance.</li>
+              <li>Built and maintained responsive marketing and product pages alongside design and back-end teams.</li>
+              <li>Debugged cross-browser rendering and performance issues, lifting page-load metrics on high-traffic templates.</li>
             </ul>
           </div>
           <div class="exp-item">
@@ -326,8 +334,8 @@
             <h3>Hospitality Volunteer <span class="company">· Irelia Sports India</span></h3>
             <p class="loc">Ahmedabad, India</p>
             <ul>
-              <li>Coordinated guest, VIP, and ticket-holder logistics on matchdays.</li>
-              <li>Supported stadium operations and cross-departmental matchday workflows.</li>
+              <li>Coordinated VIP, guest, and ticket-holder logistics on matchdays — real-time operations under time pressure.</li>
+              <li>Worked across stadium ops and event teams to keep matchday flows on schedule.</li>
             </ul>
           </div>
         </div>
@@ -364,9 +372,9 @@
         <em>worth shipping.</em>
       </h2>
       <p class="contact-lede">
-        I'm actively seeking a Summer 2026 Co-op. If you're working on something
-        in generative AI, full-stack engineering, or anywhere thoughtful software is
-        needed — I'd love to hear from you.
+        Recruiting now for <strong>Summer 2026 Co-op</strong> roles in software engineering,
+        applied AI, or product engineering. If your team is shipping real products and
+        could use a co-op who already knows the full-stack and LLM playbook — let's talk.
       </p>
       <div class="contact-grid">
         <a href="mailto:shaikhjn@mail.uc.edu" class="contact-card">
@@ -393,8 +401,8 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>© 2026 Jubin Shaikh  designed &amp; built with care.</p>
-    <p class="muted">Cincinnati, OH</p>
+    <p>© 2026 Jubin Shaikh · hand-built, not templated.</p>
+    <p class="muted">Cincinnati, OH · Open to relocation</p>
   </div>
 </footer>
 
