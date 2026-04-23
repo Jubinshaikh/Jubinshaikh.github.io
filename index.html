@@ -109,79 +109,39 @@
         <p class="sub">10+ projects shipped across full-stack web, applied AI, databases, and networking. Most are linked below — click through and break them.</p>
       </div>
 
-      <!-- ============================================================
-           FEATURED — most technically rich, real Vercel deploy,
-           pulls together ETL + NLP + viz + CI/CD
-           ============================================================ -->
+      <!-- Featured -->
       <article class="work featured">
         <div class="work-meta">
-          <span class="pill">★ Featured · Apr 2025</span>
-          <span class="stack-line">React · Plotly.js · Python ETL · NLP · GitHub Actions · Vercel</span>
+          <span class="pill">Featured · Apr 2025</span>
+          <span class="stack-line">React · Plotly.js · Python ETL · NLP · Vercel</span>
         </div>
         <h3 class="work-title">Feature Traceability — Webex Release Insights</h3>
         <p class="work-desc">
-          <strong>What it does:</strong> Lets a release manager trace how customers actually feel about every shipped feature across 24 Webex releases — sliceable by release, feature, and sentiment.<br/>
-          <strong>Stack:</strong> Python ETL pipeline, NLP sentiment classifier on raw review text, React + Plotly.js dashboard, GitHub Actions CI/CD, Vercel hosting.<br/>
-          <strong>Hard parts:</strong> Designing a schema that joins 258 features to thousands of free-text reviews, keeping client-side render under [ADD METRIC: ms target] for the largest release, and getting the NLP step deterministic enough to compare release-over-release.<br/>
-          <strong>Why it matters:</strong> Replaces a multi-day manual review cycle with a single live URL that any PM or engineer can open and reason from.
+          <strong>Problem:</strong> Cisco Webex ships dozens of features per release; tracing customer sentiment back to specific features was a manual, multi-day exercise.<br/>
+          <strong>Build:</strong> End-to-end pipeline — Python ETL ingesting 24 releases / 258 features, NLP sentiment classification on user reviews, and a React + Plotly.js dashboard for slicing by release, feature, and sentiment. Deployed via GitHub Actions CI/CD to Vercel.<br/>
+          <strong>Outcome:</strong> Collapsed days of manual review into a single interactive view — live and explorable.
         </p>
-        <p class="key-outcomes">
-          <span class="ko-label">Key outcomes</span>
-          <span class="ko-item">24 releases &amp; 258 features ingested</span>
-          <span class="ko-item">[ADD METRIC: # reviews processed]</span>
-          <span class="ko-item">Days → seconds for sentiment lookup</span>
-          <span class="ko-item">100% CI/CD on every push</span>
-        </p>
-        <div class="badges">
-          <a class="badge badge-live" href="https://lsse-trainmetaphor.vercel.app/" target="_blank">● Live demo</a>
-          <span class="badge badge-todo" title="Repo link points to profile root — needs a dedicated repo.">⚠ [ADD REPO LINK]</span>
-          <span class="badge badge-case">📄 Case study (coming)</span>
+        <div class="work-links">
+          <a class="link" href="https://lsse-trainmetaphor.vercel.app/" target="_blank">Live demo ↗</a>
+          <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source</a>
         </div>
       </article>
 
-      <!-- ============================================================
-           HIGHLIGHTED #1 + #2 — sit at top of grid in their own row
-           Beauty Advisor (LLM, deployed) + Online Shopping (DB rigor)
-           ============================================================ -->
+      <!-- Grid -->
       <div class="work-grid">
 
-        <article class="work highlighted reveal">
+        <article class="work reveal">
           <div class="work-meta">
-            <span class="pill pill-ai">★ Highlighted · Generative AI</span>
-            <span class="stack-line">JavaScript · LLM API · Prompt Engineering · DOM</span>
+            <span class="pill pill-ai">Generative AI</span>
+            <span class="stack-line">JavaScript · LLM API · DOM</span>
           </div>
           <h3 class="work-title">L'Oréal Beauty Advisor</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> A domain-scoped beauty assistant that answers skincare, haircare, makeup, and fragrance questions in natural conversation.<br/>
-            <strong>Stack:</strong> Vanilla JS front-end, LLM API with system-prompt scoping, conversation-memory state, refusal logic for off-topic queries.<br/>
-            <strong>Hard parts:</strong> Stopping the model from drifting off-domain, holding multi-turn context without ballooning token cost, and handling streamed responses with graceful failure when the API stalls.<br/>
-            <strong>Why it matters:</strong> Demonstrates an opinion on what production LLM UX requires — guardrails, memory, and recovery — not just a textarea hooked to an endpoint.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/08-prj-loreal-chatbot/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/08-prj-loreal-chatbot" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> A generic LLM chatbot drifts off-topic and hallucinates products. <strong>Build:</strong> Vanilla-JS front-end wired to an LLM API with system-prompt scoping, conversation memory, and refusal logic to keep the bot inside skincare/haircare/makeup/fragrance. <strong>Outcome:</strong> A deployed beauty advisor that stays on-domain and handles real product queries.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/08-prj-loreal-chatbot/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/08-prj-loreal-chatbot" target="_blank">Source</a>
           </div>
         </article>
-
-        <article class="work highlighted reveal">
-          <div class="work-meta">
-            <span class="pill pill-stack">★ Highlighted · Full-Stack · Mar 2025</span>
-            <span class="stack-line">React · TypeScript · Node · Express · PostgreSQL · PL/pgSQL</span>
-          </div>
-          <h3 class="work-title">Online Shopping Application</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> An end-to-end e-commerce backend with a React/TypeScript storefront — catalog browsing, cart, checkout, and inventory all backed by transactional SQL.<br/>
-            <strong>Stack:</strong> 11-table PostgreSQL schema in 3NF/BCNF, 5,000+ seeded rows, 30+ analytical queries, ACID-compliant PL/pgSQL blocks, Node/Express REST API, React + TypeScript front-end.<br/>
-            <strong>Hard parts:</strong> Modeling the order/inventory lifecycle so concurrent checkouts can't oversell stock, writing transaction blocks that roll back cleanly on failure, and tuning queries with real EXPLAIN plans.<br/>
-            <strong>Why it matters:</strong> Proof I can reason about data integrity at the schema level — not just CRUD on top of an ORM.
-          </p>
-          <div class="badges">
-            <span class="badge badge-todo" title="Repo link points to profile root — needs a dedicated repo.">⚠ [ADD REPO LINK]</span>
-            <span class="badge badge-case">📄 Case study (coming)</span>
-          </div>
-        </article>
-
-        <!-- ========== Remaining projects ========== -->
 
         <article class="work reveal">
           <div class="work-meta">
@@ -189,144 +149,111 @@
             <span class="stack-line">JavaScript · LLM API · UX</span>
           </div>
           <h3 class="work-title">L'Oréal Routine Builder</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> Builds a personalized step-by-step beauty routine from a user's selected products.<br/>
-            <strong>Stack:</strong> Catalog browser with category filters &amp; search, LLM-grounded routine generator constrained to the in-catalog SKUs.<br/>
-            <strong>Hard parts:</strong> Forcing the model to stay grounded in the [ADD METRIC: # SKUs] catalog and refuse to invent products, plus keeping the UI responsive while the LLM streams.<br/>
-            <strong>Why it matters:</strong> Shows how to wire retrieval-style grounding into a consumer LLM product without a vector DB.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/09-prj-loreal-routine-builder/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/09-prj-loreal-routine-builder" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> Customers struggle to combine products into a coherent routine. <strong>Build:</strong> Catalog browser with category filters and search, paired with an LLM that generates step-by-step routines grounded in user-selected products — not hallucinated SKUs. <strong>Outcome:</strong> Turns a static product catalog into a personalized routine in seconds.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/09-prj-loreal-routine-builder/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/09-prj-loreal-routine-builder" target="_blank">Source</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-data">Data · API</span>
-            <span class="stack-line">JavaScript · NASA APOD API · Fetch</span>
+            <span class="stack-line">JavaScript · NASA APOD API</span>
           </div>
           <h3 class="work-title">NASA Space Explorer</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> Lets users browse NASA's Astronomy Picture of the Day archive across any date range.<br/>
-            <strong>Stack:</strong> Vanilla JS front-end, NASA APOD REST API, debounced fetch + abort controllers, mixed image/video handling.<br/>
-            <strong>Hard parts:</strong> Handling the API's rate limits and inconsistent media types, writing empty/error states that don't break the layout, and keeping requests cancellable as the user scrubs dates.<br/>
-            <strong>Why it matters:</strong> A small thing done thoroughly — the kind of API integration polish that separates demo code from production.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/07-nasa-space-explorer/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/07-nasa-space-explorer" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> NASA's APOD endpoint is rich but not browsable. <strong>Build:</strong> A date-range explorer hitting the APOD API with debounced fetches, mixed image/video handling, and graceful empty + error states. <strong>Outcome:</strong> A live front-end that turns a single endpoint into something a non-developer can actually use.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/07-nasa-space-explorer/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/07-nasa-space-explorer" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-stack">Full-Stack · Mar 2025</span>
+            <span class="stack-line">React · TypeScript · Node · PostgreSQL</span>
+          </div>
+          <h3 class="work-title">Online Shopping Application</h3>
+          <p class="work-desc"><strong>Problem:</strong> Build an e-commerce backend that holds up under realistic workloads, not a toy demo. <strong>Build:</strong> 11-table PostgreSQL schema normalized to 3NF/BCNF, 5,000+ seeded rows, 30+ analytical SQL queries, and ACID-compliant PL/pgSQL transactions for inventory and checkout. Node/Express REST API consumed by a React + TypeScript front-end. <strong>Outcome:</strong> A reference-quality full-stack app demonstrating database engineering rigor end-to-end.</p>
+          <div class="work-links">
+            <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-web">Web App</span>
-            <span class="stack-line">JavaScript · HTML5 Drag-and-Drop · localStorage · Vercel</span>
+            <span class="stack-line">JavaScript · LocalStorage · DnD</span>
           </div>
           <h3 class="work-title">Kanban Task Board</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> A serverless Trello-style task board with drag-and-drop columns and persistent state across refreshes.<br/>
-            <strong>Stack:</strong> HTML5 DnD API, <code>localStorage</code> persistence, single-page vanilla JS deployed to Vercel.<br/>
-            <strong>Hard parts:</strong> Getting the drag-and-drop drop-zones to feel right across browsers, and serializing card state in a way that survives schema changes.<br/>
-            <strong>Why it matters:</strong> A useful tool with [ADD METRIC: load time / bundle size] kB total payload and zero backend cost.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://kanban-task-board-lime.vercel.app" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/kanban-task-board" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> A lightweight task board with no auth overhead and zero server cost. <strong>Build:</strong> HTML5 drag-and-drop columns, persistent state in <code>localStorage</code>, single-page UI deployed to Vercel. <strong>Outcome:</strong> A zero-backend Trello alternative that loads instantly and survives refreshes.</p>
+          <div class="work-links">
+            <a class="link" href="https://kanban-task-board-lime.vercel.app" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/kanban-task-board" target="_blank">Source</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
-            <span class="pill pill-net">Networking · Mar 2025</span>
-            <span class="stack-line">Cisco Packet Tracer · Wireshark · OSPF · VLAN · NAT</span>
+            <span class="pill pill-web">Game</span>
+            <span class="stack-line">JavaScript · Game Logic</span>
           </div>
-          <h3 class="work-title">Network Simulation &amp; Packet Analysis</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> Verifies OSPF, VLAN, and NAT configurations behave correctly under real traffic patterns.<br/>
-            <strong>Stack:</strong> Cisco Packet Tracer topologies, Wireshark captures across HTTP, VoIP, and routing flows.<br/>
-            <strong>Hard parts:</strong> Reproducing realistic traffic, isolating jitter sources in VoIP captures, and tuning OSPF metrics to actually move traffic onto the better path.<br/>
-            <strong>Why it matters:</strong> Demonstrates I can debug at the packet layer, not just call <code>fetch()</code>.
-          </p>
-          <p class="key-outcomes">
-            <span class="ko-label">Key outcomes</span>
-            <span class="ko-item">32% HTTP latency reduction after route tuning</span>
-            <span class="ko-item">VoIP jitter sources isolated via packet capture</span>
-          </p>
-          <div class="badges">
-            <span class="badge badge-todo" title="Repo link points to profile root — needs a dedicated repo.">⚠ [ADD REPO LINK]</span>
+          <h3 class="work-title">Hydration Heroes</h3>
+          <p class="work-desc"><strong>Problem:</strong> charity:water needed an engaging way to surface the global clean-water crisis. <strong>Build:</strong> Browser game with three difficulty modes, score/lives state machine, and deep-links into the charity:water donation flow. <strong>Outcome:</strong> A shippable awareness tool — playable in any browser, no install required.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/05-charity-water-game-prototype/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/05-charity-water-game-prototype" target="_blank">Source</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-web">Editorial</span>
-            <span class="stack-line">HTML · CSS · JavaScript · Progressive Disclosure</span>
+            <span class="stack-line">HTML · CSS · JavaScript</span>
           </div>
           <h3 class="work-title">Intel: Sustainability Through the Ages</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> An interactive timeline of Intel's sustainability milestones from 1968 → 2024.<br/>
-            <strong>Stack:</strong> Vanilla HTML/CSS/JS, scroll-driven progressive disclosure, milestone cards with inline data points.<br/>
-            <strong>Hard parts:</strong> Choreographing reveal animations across [ADD METRIC: # milestones] events without jank, and keeping the layout readable on mobile.<br/>
-            <strong>Why it matters:</strong> Turns a 50+ year corporate report into a five-minute scroll — front-end as storytelling.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/03-prj-intel-sustainability/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/03-prj-intel-sustainability" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> Intel's 50+ years of sustainability milestones don't land as a static report. <strong>Build:</strong> Interactive timeline (1968 → 2024) with progressive disclosure, milestone cards, and inline renewable-energy data points. <strong>Outcome:</strong> A scrollable narrative that turns a corporate report into a five-minute experience.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/03-prj-intel-sustainability/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/03-prj-intel-sustainability" target="_blank">Source</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-web">Web App</span>
-            <span class="stack-line">JavaScript · DOM · State Machine</span>
+            <span class="stack-line">JavaScript · DOM · State</span>
           </div>
           <h3 class="work-title">Sustainability Summit Check-In</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> A real-time event check-in tool with team selection, capacity caps, and live attendance counts.<br/>
-            <strong>Stack:</strong> Vanilla JS state machine, DOM-driven UI, no backend.<br/>
-            <strong>Hard parts:</strong> Modeling capacity constraints across teams without race conditions in the local state, and keeping the counter glanceable for an event volunteer at a kiosk.<br/>
-            <strong>Why it matters:</strong> Pragmatic browser-only solution for a problem most people would over-engineer with a server.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/05-prj-intel-event-check-in/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/05-prj-intel-event-check-in" target="_blank">⌥ Source</a>
+          <p class="work-desc"><strong>Problem:</strong> Event organizers needed a real-time check-in tool without standing up a backend. <strong>Build:</strong> Vanilla JS state machine handling team selection, capacity caps, and live attendance counts in the DOM. <strong>Outcome:</strong> A drop-in browser tool that ran the prototype check-in flow for an Intel sustainability summit demo.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/05-prj-intel-event-check-in/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/05-prj-intel-event-check-in" target="_blank">Source</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
-            <span class="pill pill-web">Game · Social Impact</span>
-            <span class="stack-line">JavaScript · Game Loop · State Machine</span>
+            <span class="pill pill-net">Networking · Mar 2025</span>
+            <span class="stack-line">Cisco Packet Tracer · Wireshark</span>
           </div>
-          <h3 class="work-title">Hydration Heroes</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> A browser game raising awareness for clean-water access, with three difficulty modes that funnel players to charity:water donation.<br/>
-            <strong>Stack:</strong> Vanilla JS game loop, lives/score state machine, deep-links into the charity:water donation flow.<br/>
-            <strong>Hard parts:</strong> Tuning difficulty curves so the game stays fair across modes, and keeping the call-to-action prominent without breaking gameplay.<br/>
-            <strong>Why it matters:</strong> Shows I can ship something that's genuinely fun and on-message.
-          </p>
-          <div class="badges">
-            <a class="badge badge-live" href="https://jubinshaikh.github.io/05-charity-water-game-prototype/" target="_blank">● Live demo</a>
-            <a class="badge badge-source" href="https://github.com/Jubinshaikh/05-charity-water-game-prototype" target="_blank">⌥ Source</a>
+          <h3 class="work-title">Network Simulation &amp; Packet Analysis</h3>
+          <p class="work-desc"><strong>Problem:</strong> Verify OSPF, VLAN, and NAT configurations behave the way the spec claims under real traffic. <strong>Build:</strong> Multi-lab Cisco Packet Tracer topologies plus Wireshark captures across HTTP, VoIP, and routing flows. <strong>Outcome:</strong> Documented a <strong>32% HTTP latency reduction</strong> after route tuning and isolated VoIP jitter sources via packet-level analysis.</p>
+          <div class="work-links">
+            <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
 
         <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-edu">EdTech · Dec 2024</span>
-            <span class="stack-line">MATLAB · GUI · Auto-grading</span>
+            <span class="stack-line">MATLAB · GUI</span>
           </div>
           <h3 class="work-title">Interactive Flowchart Learning Tool</h3>
-          <p class="work-desc">
-            <strong>What it does:</strong> A MATLAB GUI app that teaches and tests flowcharting logic for middle-school students.<br/>
-            <strong>Stack:</strong> MATLAB GUI, instruction module, testing module, automated visual-feedback grader.<br/>
-            <strong>Hard parts:</strong> Auto-grading hand-drawn flowchart logic with feedback specific enough to be useful to a 12-year-old.<br/>
-            <strong>Why it matters:</strong> A working classroom tool — built for real students, not a prompt.
-          </p>
-          <div class="badges">
-            <span class="badge badge-todo" title="Repo link points to profile root — needs a dedicated repo.">⚠ [ADD REPO LINK]</span>
+          <p class="work-desc"><strong>Problem:</strong> Middle-schoolers struggle to learn flowchart logic from static worksheets. <strong>Build:</strong> MATLAB GUI app with instruction, testing, and automated visual feedback — students draw flowcharts and the tool grades them. <strong>Outcome:</strong> A self-contained classroom tool used to teach algorithmic thinking before students touch code.</p>
+          <div class="work-links">
+            <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
 
