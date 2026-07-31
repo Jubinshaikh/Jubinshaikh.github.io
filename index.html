@@ -105,11 +105,122 @@
     <div class="container">
       <div class="section-head">
         <p class="label">02 — Selected Work</p>
-        <h2 class="heading reveal">Built, deployed, and live.</h2>
-        <p class="sub">10+ projects shipped across full-stack web, applied AI, databases, and networking. Most are linked below click through and break them.</p>
+        <h2 class="heading reveal">Seven things I built and put in front of users.</h2>
+        <p class="sub">Every one is live and clickable. Open them, break them, read the source.</p>
       </div>
- 
+
       <!-- Featured -->
+            <article class="work featured">
+          <div class="work-meta">
+            <span class="pill">Featured · Generative AI</span>
+            <span class="stack-line">JavaScript · LLM API · UX</span>
+          </div>
+          <h3 class="work-title">L'Oréal Routine Builder</h3>
+          <p class="work-desc"><strong>Problem:</strong> Customers struggle to combine products into a coherent routine.<br/>
+          <strong>Build:</strong> Catalog browser with category filters and search, paired with an LLM that generates step-by-step routines grounded in user-selected products not hallucinated SKUs.<br/>
+          <strong>Outcome:</strong> Turns a static product catalog into a personalized routine in seconds.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/09-prj-loreal-routine-builder/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/09-prj-loreal-routine-builder" target="_blank">Source</a>
+          </div>
+        </article>
+
+      <!-- Grid -->
+      <div class="work-grid">
+
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-ai">Generative AI</span>
+            <span class="stack-line">JavaScript · LLM API · DOM</span>
+          </div>
+          <h3 class="work-title">L'Oréal Beauty Advisor</h3>
+          <p class="work-desc"><strong>Problem:</strong> A generic LLM chatbot drifts off-topic and hallucinates products.<br/>
+          <strong>Build:</strong> Vanilla-JS front-end wired to an LLM API with system-prompt scoping, conversation memory, and refusal logic to keep the bot inside skincare/haircare/makeup/fragrance.<br/>
+          <strong>Outcome:</strong> A deployed beauty advisor that stays on-domain and handles real product queries.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/08-prj-loreal-chatbot/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/08-prj-loreal-chatbot" target="_blank">Source</a>
+          </div>
+        </article>
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-data">Data · API</span>
+            <span class="stack-line">JavaScript · NASA APOD API</span>
+          </div>
+          <h3 class="work-title">NASA Space Explorer</h3>
+          <p class="work-desc"><strong>Problem:</strong> NASA's APOD endpoint is rich but not browsable.<br/>
+          <strong>Build:</strong> A date-range explorer hitting the APOD API with debounced fetches, mixed image/video handling, and graceful empty + error states.<br/>
+          <strong>Outcome:</strong> A live front-end that turns a single endpoint into something a non-developer can actually use.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/07-nasa-space-explorer/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/07-nasa-space-explorer" target="_blank">Source</a>
+          </div>
+        </article>
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-web">Web App</span>
+            <span class="stack-line">JavaScript · LocalStorage · DnD</span>
+          </div>
+          <h3 class="work-title">Kanban Task Board</h3>
+          <p class="work-desc"><strong>Problem:</strong> A lightweight task board with no auth overhead and zero server cost.<br/>
+          <strong>Build:</strong> HTML5 drag-and-drop columns, persistent state in <code>localStorage</code>, single-page UI deployed to Vercel.<br/>
+          <strong>Outcome:</strong> A zero-backend Trello alternative that loads instantly and survives refreshes.</p>
+          <div class="work-links">
+            <a class="link" href="https://kanban-task-board-lime.vercel.app" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/kanban-task-board" target="_blank">Source</a>
+          </div>
+        </article>
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-web">Game</span>
+            <span class="stack-line">JavaScript · Game Logic</span>
+          </div>
+          <h3 class="work-title">Hydration Heroes</h3>
+          <p class="work-desc"><strong>Problem:</strong> charity:water needed an engaging way to surface the global clean-water crisis.<br/>
+          <strong>Build:</strong> Browser game with three difficulty modes, score/lives state machine, and deep-links into the charity:water donation flow.<br/>
+          <strong>Outcome:</strong> A shippable awareness tool playable in any browser, no install required.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/05-charity-water-game-prototype/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/05-charity-water-game-prototype" target="_blank">Source</a>
+          </div>
+        </article>
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-web">Editorial</span>
+            <span class="stack-line">HTML · CSS · JavaScript</span>
+          </div>
+          <h3 class="work-title">Intel: Sustainability Through the Ages</h3>
+          <p class="work-desc"><strong>Problem:</strong> Intel's 50+ years of sustainability milestones don't land as a static report.<br/>
+          <strong>Build:</strong> Interactive timeline (1968 → 2024) with progressive disclosure, milestone cards, and inline renewable-energy data points.<br/>
+          <strong>Outcome:</strong> A scrollable narrative that turns a corporate report into a five-minute experience.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/03-prj-intel-sustainability/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/03-prj-intel-sustainability" target="_blank">Source</a>
+          </div>
+        </article>
+      <article class="work reveal">
+          <div class="work-meta">
+            <span class="pill pill-web">Web App</span>
+            <span class="stack-line">JavaScript · DOM · State</span>
+          </div>
+          <h3 class="work-title">Sustainability Summit Check-In</h3>
+          <p class="work-desc"><strong>Problem:</strong> Event organizers needed a real-time check-in tool without standing up a backend.<br/>
+          <strong>Build:</strong> Vanilla JS state machine handling team selection, capacity caps, and live attendance counts in the DOM.<br/>
+          <strong>Outcome:</strong> A drop-in browser tool that ran the prototype check-in flow for an Intel sustainability summit demo.</p>
+          <div class="work-links">
+            <a class="link" href="https://jubinshaikh.github.io/05-prj-intel-event-check-in/" target="_blank">Live demo ↗</a>
+            <a class="link muted" href="https://github.com/Jubinshaikh/05-prj-intel-event-check-in" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <!-- ============================================================
+             ARCHIVED PROJECTS
+             These are hidden, not deleted. To put one back on the page,
+             delete the comment markers around that single <article> block.
+             Each is self-contained and needs no other change.
+             ============================================================ -->
+
+        <!-- Feature Traceability Webex Release Insights
       <article class="work featured">
         <div class="work-meta">
           <span class="pill">Featured · Apr 2025</span>
@@ -126,56 +237,10 @@
           <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source</a>
         </div>
       </article>
- 
-      <!-- Grid -->
-      <div class="work-grid">
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-ai">Generative AI</span>
-            <span class="stack-line">JavaScript · LLM API · DOM</span>
-          </div>
-          <h3 class="work-title">L'Oréal Beauty Advisor</h3>
-          <p class="work-desc"><strong>Problem:</strong> A generic LLM chatbot drifts off-topic and hallucinates products.<br/>
-          <strong>Build:</strong> Vanilla-JS front-end wired to an LLM API with system-prompt scoping, conversation memory, and refusal logic to keep the bot inside skincare/haircare/makeup/fragrance.<br/>
-          <strong>Outcome:</strong> A deployed beauty advisor that stays on-domain and handles real product queries.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/08-prj-loreal-chatbot/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/08-prj-loreal-chatbot" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-ai">Generative AI</span>
-            <span class="stack-line">JavaScript · LLM API · UX</span>
-          </div>
-          <h3 class="work-title">L'Oréal Routine Builder</h3>
-          <p class="work-desc"><strong>Problem:</strong> Customers struggle to combine products into a coherent routine.<br/>
-          <strong>Build:</strong> Catalog browser with category filters and search, paired with an LLM that generates step-by-step routines grounded in user-selected products not hallucinated SKUs.<br/>
-          <strong>Outcome:</strong> Turns a static product catalog into a personalized routine in seconds.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/09-prj-loreal-routine-builder/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/09-prj-loreal-routine-builder" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-data">Data · API</span>
-            <span class="stack-line">JavaScript · NASA APOD API</span>
-          </div>
-          <h3 class="work-title">NASA Space Explorer</h3>
-          <p class="work-desc"><strong>Problem:</strong> NASA's APOD endpoint is rich but not browsable.<br/>
-          <strong>Build:</strong> A date-range explorer hitting the APOD API with debounced fetches, mixed image/video handling, and graceful empty + error states.<br/>
-          <strong>Outcome:</strong> A live front-end that turns a single endpoint into something a non-developer can actually use.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/07-nasa-space-explorer/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/07-nasa-space-explorer" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
+        -->
+
+        <!-- Online Shopping Application
+      <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-stack">Full-Stack · Mar 2025</span>
             <span class="stack-line">React · TypeScript · Node · PostgreSQL</span>
@@ -188,68 +253,10 @@
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-web">Web App</span>
-            <span class="stack-line">JavaScript · LocalStorage · DnD</span>
-          </div>
-          <h3 class="work-title">Kanban Task Board</h3>
-          <p class="work-desc"><strong>Problem:</strong> A lightweight task board with no auth overhead and zero server cost.<br/>
-          <strong>Build:</strong> HTML5 drag-and-drop columns, persistent state in <code>localStorage</code>, single-page UI deployed to Vercel.<br/>
-          <strong>Outcome:</strong> A zero-backend Trello alternative that loads instantly and survives refreshes.</p>
-          <div class="work-links">
-            <a class="link" href="https://kanban-task-board-lime.vercel.app" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/kanban-task-board" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-web">Game</span>
-            <span class="stack-line">JavaScript · Game Logic</span>
-          </div>
-          <h3 class="work-title">Hydration Heroes</h3>
-          <p class="work-desc"><strong>Problem:</strong> charity:water needed an engaging way to surface the global clean-water crisis.<br/>
-          <strong>Build:</strong> Browser game with three difficulty modes, score/lives state machine, and deep-links into the charity:water donation flow.<br/>
-          <strong>Outcome:</strong> A shippable awareness tool playable in any browser, no install required.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/05-charity-water-game-prototype/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/05-charity-water-game-prototype" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-web">Editorial</span>
-            <span class="stack-line">HTML · CSS · JavaScript</span>
-          </div>
-          <h3 class="work-title">Intel: Sustainability Through the Ages</h3>
-          <p class="work-desc"><strong>Problem:</strong> Intel's 50+ years of sustainability milestones don't land as a static report.<br/>
-          <strong>Build:</strong> Interactive timeline (1968 → 2024) with progressive disclosure, milestone cards, and inline renewable-energy data points.<br/>
-          <strong>Outcome:</strong> A scrollable narrative that turns a corporate report into a five-minute experience.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/03-prj-intel-sustainability/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/03-prj-intel-sustainability" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
-          <div class="work-meta">
-            <span class="pill pill-web">Web App</span>
-            <span class="stack-line">JavaScript · DOM · State</span>
-          </div>
-          <h3 class="work-title">Sustainability Summit Check-In</h3>
-          <p class="work-desc"><strong>Problem:</strong> Event organizers needed a real-time check-in tool without standing up a backend.<br/>
-          <strong>Build:</strong> Vanilla JS state machine handling team selection, capacity caps, and live attendance counts in the DOM.<br/>
-          <strong>Outcome:</strong> A drop-in browser tool that ran the prototype check-in flow for an Intel sustainability summit demo.</p>
-          <div class="work-links">
-            <a class="link" href="https://jubinshaikh.github.io/05-prj-intel-event-check-in/" target="_blank">Live demo ↗</a>
-            <a class="link muted" href="https://github.com/Jubinshaikh/05-prj-intel-event-check-in" target="_blank">Source</a>
-          </div>
-        </article>
- 
-        <article class="work reveal">
+        -->
+
+        <!-- Network Simulation &amp; Packet Analysis
+      <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-net">Networking · Mar 2025</span>
             <span class="stack-line">Cisco Packet Tracer · Wireshark</span>
@@ -262,8 +269,10 @@
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
- 
-        <article class="work reveal">
+        -->
+
+        <!-- Interactive Flowchart Learning Tool
+      <article class="work reveal">
           <div class="work-meta">
             <span class="pill pill-edu">EdTech · Dec 2024</span>
             <span class="stack-line">MATLAB · GUI</span>
@@ -276,13 +285,13 @@
             <a class="link muted" href="https://github.com/Jubinshaikh" target="_blank">Source →</a>
           </div>
         </article>
- 
+        -->
+
       </div>
     </div>
   </section>
  
-  <!-- SKILLS -->
-  <section id="skills" class="section section-skills">
+<section id="skills" class="section section-skills">
     <div class="container two-col">
       <div class="col-side">
         <p class="label">03 — Toolkit</p>
