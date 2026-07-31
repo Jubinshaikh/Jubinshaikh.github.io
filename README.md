@@ -1,6 +1,6 @@
 # jubinshaikh.github.io
 
-Personal portfolio site for **Jubin Shaikh** — Computer Science, University of
+Personal portfolio site for **Jubin Shaikh**  Computer Science, University of
 Cincinnati. Full-stack and applied AI work, with every listed project deployed
 and clickable.
 
@@ -8,7 +8,7 @@ and clickable.
 
 ## About
 
-A hand-built static site — no framework, no build step, no dependencies beyond
+A hand-built static site  no framework, no build step, no dependencies beyond
 webfonts. The whole thing is three files and a folder of images, which keeps it
 fast and means there is nothing to break on deploy.
 
@@ -20,7 +20,7 @@ Sections: intro, selected work, stack, experience, contact.
 | --- | --- |
 | Markup | Semantic HTML5 |
 | Styling | Hand-written CSS with custom properties, no framework |
-| Behavior | Vanilla JavaScript — scroll reveals, nav state |
+| Behavior | Vanilla JavaScript scroll reveals, nav state |
 | Type | Source Serif 4, Inter, JetBrains Mono |
 | Hosting | GitHub Pages |
 | Analytics | Cloudflare Web Analytics (cookieless) |
@@ -69,7 +69,7 @@ Then visit http://localhost:8000.
 Cloudflare Web Analytics is enabled via a beacon snippet in `index.html` and
 `waph.html`. It is cookieless and collects no personally identifying
 information, so the site needs no consent banner. Numbers should be read as a
-floor rather than exact — ad blockers prevent the beacon from loading for some
+floor rather than exact  ad blockers prevent the beacon from loading for some
 visitors.
 
 ## Deploying
